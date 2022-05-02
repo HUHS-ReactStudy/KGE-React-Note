@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import Average2 from './useCallback';
-import Average from './useMemo';
-import Counter2 from './useReducer';
-import Info2 from './useReducer2';
-import Counter from './useState';
-import Info from './useState2&useEffect';
+import Average2 from './5_useCallback';
+import Average from './4_useMemo';
+import Counter2 from './3_useReducer';
+import Info2 from './3_useReducer2';
+import Counter from './1_useState';
+import Info from './2_useState2&useEffect';
+import Average3 from './6_useRef';
 
 const App = () => {
   const [visible, setVisible] = useState(false);
@@ -38,6 +39,9 @@ const App = () => {
 
         {/* useCallback */}
         <Average2 />
+
+        {/* useRef */}
+        <Average3 />
       </div>
     </>
   );
